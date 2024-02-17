@@ -1,0 +1,25 @@
+
+### Criar um novo usuário
+POST http://localhost:3000/users
+content-Type: application/json
+
+{
+  "name": "Erick",
+  "email": "cilano@gmail.com"
+}
+
+### Listar todos os usuários
+GET http://localhost:3000/users?search=Fraga
+
+### Delete user
+DELETE http://localhost:3000/users/d5ca5f1b-53f1-4865-869a-4c9bb626859e
+
+### Update user
+PUT http://localhost:3000/users/a0a7200c-4f6f-4f06-ae7f-18fa4c88a493
+content-Type: application/json
+
+{
+  "name": "Erick Fraga",
+  "email": "erick.fraga@teste.com"
+}
+
